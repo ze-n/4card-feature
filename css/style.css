@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  font-size: 15px;
+}
+
+body {
+  --red-clr: hsl(0, 78%, 62%);
+  --cyan-clr: hsl(180, 62%, 55%);
+  --orange-clr: hsl(34, 97%, 64%);
+  --blue-clr: hsl(212, 86%, 64%);
+  --very-dark-blue-clr: hsl(234, 12%, 34%);
+  --grayish-blue-clr: hsl(229, 6%, 66%);
+  --very-light-gray-clr: hsl(0, 0%, 98%);
+  color: var(--grayish-blue-clr);
+  background: var(--very-light-gray-clr);
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  min-height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5rem 2rem;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+}
+
+a:hover, a:focus {
+  opacity: .5;
+}
+
+h2 {
+  color: var(--very-dark-blue-clr);
+}
+
+.text-light {
+  font-weight: 200;
+}
+
+.text-container {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.text-container p {
+  margin-top: 1rem;
+  max-width: 500px;
+}
+
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.card {
+  max-width: 300px;
+  width: 100%;
+  background: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: .5rem;
+  overflow: hidden;
+  -webkit-box-shadow: 0rem 0.5rem 0.5rem 0.1rem rgba(87, 152, 206, 0.226);
+          box-shadow: 0rem 0.5rem 0.5rem 0.1rem rgba(87, 152, 206, 0.226);
+  position: relative;
+}
+
+.card h2 {
+  margin-bottom: .5rem;
+}
+
+.card p {
+  margin-bottom: 2.5rem;
+  font-size: 13px;
+}
+
+.card__icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+}
+
+.card-red::before {
+  background: var(--red-clr);
+}
+
+.card-blue::before {
+  background: var(--blue-clr);
+}
+
+.card-cyan::before {
+  background: var(--cyan-clr);
+}
+
+.card-orange::before {
+  background: var(--orange-clr);
+}
+
+footer {
+  width: 100vw;
+  min-height: 3rem;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer a {
+  margin: 0 .2rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .card-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .card {
+    margin-right: 2rem;
+  }
+  .card-container-inner {
+    margin-right: 2rem;
+  }
+  .card-container-inner .card {
+    margin-right: 0rem;
+  }
+  .card-blue {
+    margin-right: 0;
+  }
+  p {
+    margin-top: 1rem;
+  }
+  h2.main {
+    font-size: 2rem;
+  }
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+/*# sourceMappingURL=style.css.map */
