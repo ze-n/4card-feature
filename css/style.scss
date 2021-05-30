@@ -89,7 +89,7 @@ h2 {
     }
     &__icon-container {
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
     }
     &::before {
         content: '';
